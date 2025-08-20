@@ -114,11 +114,19 @@ footer {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 15px;
   transition: background 0.3s ease;
 }
 
+/* Hover effect */
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
+
+/* Center Contact Section */
+#contact {
+  text-align: center;
+}
+
+
 

@@ -1,133 +1,83 @@
-* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Reset */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Header */
 header {
-    background: #0d6efd;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-header nav a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
-}
-header nav a:hover {
-    text-decoration: underline;
+  background: navy;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                url('https://picsum.photos/1600/700') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-}
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-.hero button {
-    background: #ffc107;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-.hero button:hover {
-    background: #e0a800;
+.logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
 }
 
-/* Services */
-.services {
-    padding: 40px 20px;
-    text-align: center;
-    background: #ffffff;
-}
-.services h2 {
-    margin-bottom: 20px;
-}
-.service {
-    margin: 15px auto;
-    padding: 20px;
-    max-width: 350px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-.service i {
-    font-size: 2rem;
-    color: #0d6efd;
-    margin-bottom: 10px;
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
-/* Footer */
-footer {
-    background: #0d6efd;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 30px;
+header p {
+  font-size: 1.2em;
+  margin-top: 5px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-    header nav a {
-        display: block;
-        margin: 5px 0;
-    }
-    .hero h1 {
-        font-size: 2em;
-    }
+/* Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
 }
-/* WhatsApp Order Button */
+
+section h2 {
+  color: navy;
+  margin-bottom: 15px;
+}
+
+/* WhatsApp Button */
 .whatsapp-btn {
   background-color: #25D366;   /* WhatsApp green */
-  color: white !important;
-  padding: 14px 30px;
+  color: white;
+  padding: 12px 24px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   margin-top: 15px;
   transition: background 0.3s ease;
 }
 
-/* Hover effect */
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
 
-/* Center Contact Section content */
-#contact {
-  text-align: center;
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
 }
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+
 
 
 

@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-  width: 100px;
+  width: 200px;
   height: auto;
   display: block;
   margin: 0 auto 15px;
@@ -115,4 +115,5 @@ footer {
   padding: 15px;
   font-size: 0.9em;
 }
+
 

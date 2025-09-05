@@ -2,20 +2,21 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #014D36; /* ✅ full-page background */
-  color: white;
+  background: #014D36; /* Logo background green */
+  color: #fff; /* White text for readability */
   line-height: 1.6;
 }
 
 /* Header */
 header {
+  background-color: #014D36; 
   text-align: center;
-  padding: 20px;
+  padding: 30px 15px;
 }
 
 .logo {
-  width: 200px;
-  height: auto;
+  width: 250px;   /* Bigger logo */
+  max-width: 100%;
   display: block;
   margin: 0 auto 15px;
 }
@@ -23,36 +24,37 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.5em;
-  color: white;
+  color: #FFD700; /* Gold text */
 }
 
 header p {
   font-size: 1.2em;
   margin-top: 5px;
-  color: white;
+  color: #FFD700; /* Gold accent */
 }
 
 /* Sections */
 section {
   padding: 40px 20px;
   text-align: center;
-  background: white; /* white card-like sections */
-  color: #333; /* dark text inside sections */
+  background: #fff; /* White background for content */
+  color: #333; /* Dark text inside sections */
   margin: 20px auto;
-  max-width: 1000px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  max-width: 1100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 section h2 {
   color: #014D36;
   margin-bottom: 20px;
+  font-size: 1.8em;
 }
 
 /* Product Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
@@ -65,21 +67,22 @@ section h2 {
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  height: 450px;
+  height: 480px; /* equal height */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
 .product-card img {
   width: 100%;
-  height: 250px;
-  object-fit: contain;
+  height: 250px; /* equal image area */
+  object-fit: contain; /* keeps proportions */
   border-radius: 6px;
   margin-bottom: 10px;
 }
@@ -87,21 +90,23 @@ section h2 {
 .product-card h3 {
   margin: 10px 0 5px;
   color: #014D36;
+  font-weight: bold;
 }
 
 .product-card p {
   margin: 5px 0;
 }
 
+/* Price Styling */
 .price {
   font-weight: bold;
-  color: #28a745;
-  font-size: 1.1em;
+  color: #28a745; /* Green for price */
+  font-size: 1.2em;
 }
 
 /* WhatsApp Button */
 .whatsapp-btn {
-  background-color: #014D36;
+  background-color: #25D366;   /* WhatsApp green */
   color: white;
   padding: 12px 24px;
   border-radius: 6px;
@@ -116,7 +121,7 @@ section h2 {
 }
 
 .whatsapp-btn:hover {
-  background-color: #02694A;
+  background-color: #1ebe5d;
 }
 
 .whatsapp-icon {
@@ -127,10 +132,11 @@ section h2 {
 
 /* Footer */
 footer {
-  background: #014D36;
+  background: #013322;
   color: #fff;
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
   margin-top: 30px;
+  border-top: 2px solid #FFD700;
 }

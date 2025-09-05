@@ -24,16 +24,14 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.5em;
-  color: #FFD700; /* Gold text */
+  color: #D4AF37; /* Premium gold */
 }
 
 header p {
   font-size: 1.2em;
   margin-top: 5px;
-  color: #FFD700; /* Gold accent */
+  color: #D4AF37; /* Premium gold */
 }
-
-
 /* Sections */
 section {
   padding: 40px 20px;
@@ -141,4 +139,5 @@ footer {
   margin-top: 30px;
   border-top: 2px solid #FFD700;
 }
+
 

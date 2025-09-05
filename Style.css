@@ -9,10 +9,13 @@ body {
 
 /* Header */
 header {
-  background: navy;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+  body {
+  background-color: #014D36;
+  color: white; /* make text readable on dark background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 }
 
 .logo {

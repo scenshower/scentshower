@@ -2,20 +2,15 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f8f9fa;
-  color: #333;
+  background-color: #014D36; /* ✅ full-page background */
+  color: white;
   line-height: 1.6;
 }
 
 /* Header */
 header {
-  body {
-  background-color: #014D36;
-  color: white; /* make text readable on dark background */
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
+  text-align: center;
+  padding: 20px;
 }
 
 .logo {
@@ -28,21 +23,29 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.5em;
+  color: white;
 }
 
 header p {
   font-size: 1.2em;
   margin-top: 5px;
+  color: white;
 }
 
 /* Sections */
 section {
   padding: 40px 20px;
   text-align: center;
+  background: white; /* white card-like sections */
+  color: #333; /* dark text inside sections */
+  margin: 20px auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 section h2 {
-  color: navy;
+  color: #014D36;
   margin-bottom: 20px;
 }
 
@@ -62,6 +65,10 @@ section h2 {
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product-card:hover {
@@ -71,22 +78,30 @@ section h2 {
 
 .product-card img {
   width: 100%;
+  height: 250px;
+  object-fit: contain;
   border-radius: 6px;
   margin-bottom: 10px;
 }
 
 .product-card h3 {
   margin: 10px 0 5px;
-  color: navy;
+  color: #014D36;
 }
 
 .product-card p {
   margin: 5px 0;
 }
 
+.price {
+  font-weight: bold;
+  color: #28a745;
+  font-size: 1.1em;
+}
+
 /* WhatsApp Button */
 .whatsapp-btn {
-  background-color: #25D366;   /* WhatsApp green */
+  background-color: #014D36;
   color: white;
   padding: 12px 24px;
   border-radius: 6px;
@@ -101,7 +116,7 @@ section h2 {
 }
 
 .whatsapp-btn:hover {
-  background-color: #1ebe5d;
+  background-color: #02694A;
 }
 
 .whatsapp-icon {
@@ -112,42 +127,10 @@ section h2 {
 
 /* Footer */
 footer {
-  background: #222;
+  background: #014D36;
   color: #fff;
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
+  margin-top: 30px;
 }
-.price {
-  font-weight: bold;
-  color: #28a745; /* green */
-  font-size: 1.1em;
-}
-.product-card {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  height: 450px;            /* same height for all cards */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.product-card img {
-  width: 100%;
-  height: 250px;            /* equal image area */
-  object-fit: contain;      /* no cutting */
-}
-
-
-
-
-
-
-
-
-
-
